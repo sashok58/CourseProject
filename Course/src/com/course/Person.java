@@ -3,7 +3,7 @@ package com.course;
 /**
  * Created by Z on 5/18/2016.
  */
-public class Person {
+public class Person implements Persons{
     protected String name;
     protected double weight;
 
@@ -26,5 +26,10 @@ public class Person {
     public Person(String name, double weight) {
         this.name = name;
         this.weight = weight;
+    }
+
+    @Override
+    public String getInfo(Object object) {
+        return null;
     }
 }

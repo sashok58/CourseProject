@@ -12,6 +12,6 @@ public class Novice extends Person implements Persons {
     }
 
     public String getInfo(Object object) {
-        return null;
+        return "My name is " + this.getName() + " my weight is " + this.getWeight();
     }
 }
