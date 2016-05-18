@@ -29,7 +29,7 @@ public class Person implements Persons{
     }
 
     @Override
-    public String getInfo(Object object) {
+    public String getInfo() {
         return null;
     }
 }

@@ -12,7 +12,7 @@ public class Professional extends Person implements Persons {
     }
 
     @Override
-    public String getInfo(Object object) {
+    public String getInfo() {
         return null;
     }
 }
