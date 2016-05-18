@@ -8,17 +8,16 @@ public class PersonRunner {
     public static void main(String[] args) {
         Novice novice = new Novice("Alex", 100.);
         List<Exercise> noviceExerciseList = new ArrayList<>();
-        noviceExerciseList.add(new Exercise("Arm","Arm exercise"));
-        noviceExerciseList.add(new Exercise("Body","Body exercise"));
-        noviceExerciseList.add(new Exercise("Leg","Leg exercise"));
+        noviceExerciseList.add(new Exercise("Arm", "Arm exercise"));
+        noviceExerciseList.add(new Exercise("Body", "Body exercise"));
+        noviceExerciseList.add(new Exercise("Leg", "Leg exercise"));
         novice.setExercise(noviceExerciseList);
+        System.out.println(novice.getInfo());
         for (Exercise exercise : noviceExerciseList) {
-            /*System.out.println(exercise.getInfo());*/
+            System.out.println(exercise.getInfoAboutExercise(exercise.getExerciseType(), novice.getDiffRepeatCount(), novice.getDiffPercentWeight(), novice.getWeight()));
 
         }
-//Get info about Person
-        System.out.println(novice.getInfo());
-//Get
+
 
         Professional professional = new Professional("Bob", 80.);
        /* professional.exercise.add(new Exercise("Arm","Arm exercise"));
