@@ -8,6 +8,19 @@ import java.util.List;
  */
 public class Novice extends Person implements Persons {
     private List<Exercise> exercise;
+    private final int diffPercentWeight=20;
+    private final int diffRepeatCount = 2;
+
+    public int getDiffRepeatCount() {
+        return diffRepeatCount;
+    }
+
+    public int getDiffPercentWeight() {
+        return diffPercentWeight;
+
+    }
+
+
     public Novice(String name, double weight) {
         super(name, weight);
     }

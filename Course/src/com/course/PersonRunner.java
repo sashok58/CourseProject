@@ -13,12 +13,12 @@ public class PersonRunner {
         noviceExerciseList.add(new Exercise("Leg","Leg exercise"));
         novice.setExercise(noviceExerciseList);
         for (Exercise exercise : noviceExerciseList) {
-            System.out.println(exercise.getInfo());
+            /*System.out.println(exercise.getInfo());*/
+
         }
-
-        System.out.println("novice = " + novice);
+//Get info about Person
         System.out.println(novice.getInfo());
-
+//Get
 
         Professional professional = new Professional("Bob", 80.);
        /* professional.exercise.add(new Exercise("Arm","Arm exercise"));

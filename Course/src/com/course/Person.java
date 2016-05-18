@@ -3,9 +3,10 @@ package com.course;
 /**
  * Created by Z on 5/18/2016.
  */
-public class Person implements Persons{
+public class Person implements Persons {
     protected String name;
     protected double weight;
+
 
     public String getName() {
         return name;

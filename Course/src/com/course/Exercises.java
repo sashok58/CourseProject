@@ -5,4 +5,7 @@ package com.course;
  */
 public interface Exercises {
     String getInfo();
+    String getInfoAboutExercise();
+    int getRepeatCount(int diffRepeatCount,String exerciseType);
+    double getExerciseWeight();
 }
