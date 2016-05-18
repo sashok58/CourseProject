@@ -3,7 +3,7 @@ package com.course;
 /**
  * Created by Z on 5/18/2016.
  */
-public interface Persons {
-    String getInfo(Object object);
+public class Leg extends Exercise implements Exercises{
+
 
 }
