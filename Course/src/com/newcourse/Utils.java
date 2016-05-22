@@ -12,10 +12,10 @@ public class Utils {
         return true;
     }
 
-    public static FileWriter createFile() {
+    public static FileWriter createFile(String name) {
         FileWriter result = null;
-        try {
-            FileWriter fw = new FileWriter("database.txt");
+         try {
+            FileWriter fw = new FileWriter(name,false);
             result = fw;
         } catch (IOException e) {
             e.printStackTrace();
@@ -27,6 +27,8 @@ public static boolean writeFile(FileWriter fw,String text){
     boolean result;
     try {
         fw.write(text);
+        fw.append('\n');
+        fw.flush();
         result=true;
     } catch (IOException e) {
         e.printStackTrace();
